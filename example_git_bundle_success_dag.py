@@ -2,6 +2,7 @@ from airflow import DAG
 from airflow.operators.bash import BashOperator
 import logging
 
+# Add a test comment
 def _on_success(context):
     logging.getLogger().warning(">>> SUCCESS CALLBACK TRIGGERED <<<")
 
