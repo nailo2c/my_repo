@@ -1,6 +1,5 @@
 from airflow import DAG
 from airflow.operators.bash import BashOperator
-from airflow.utils.dates import days_ago
 
 def _on_success(context):
     print(">>> SUCCESS CALLBACK TRIGGERED <<<")
@@ -13,7 +12,6 @@ default_args = {
 with DAG(
     dag_id="git_bundle_success_demo",
     default_args=default_args,
-    start_date=days_ago(1),
     schedule=None,
     on_success_callback=_on_success,
     catchup=False,
