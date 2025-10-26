@@ -3,8 +3,7 @@ from airflow.operators.bash import BashOperator
 import logging
 
 def _on_success(context):
-    print(">>> SUCCESS CALLBACK TRIGGERED <<<")
-    logging.getLogger("airflow.task").info(">>> SUCCESS CALLBACK TRIGGERED <<<")
+    logging.getLogger().warning(">>> SUCCESS CALLBACK TRIGGERED <<<")
 
 default_args = {
     "owner": "airflow",
