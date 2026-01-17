@@ -4,7 +4,7 @@ import logging
 
 # Add a test comment
 def _on_success(context):
-    logging.getLogger().warning(">>> SUCCESS CALLBACK TRIGGERED VERSION 2 <<<")
+    logging.getLogger().warning(">>> SUCCESS CALLBACK TRIGGERED VERSION 3 <<<")
 
 default_args = {
     "owner": "airflow",
