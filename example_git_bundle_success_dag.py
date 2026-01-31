@@ -4,10 +4,10 @@ import logging
 
 # Add a test comment
 def _on_success(context):
-    logging.getLogger().warning(">>> SUCCESS CALLBACK TRIGGERED VERSION 3 <<<")
+    logging.getLogger().warning(">>> SUCCESS CALLBACK TRIGGERED VERSION 5 <<<")
 
 def _on_failure(context):
-    logging.getLogger().warning(">>> FAILURE CALLBACK TRIGGERED VERSION 4 <<<")
+    logging.getLogger().warning(">>> FAILURE CALLBACK TRIGGERED VERSION 5 <<<")
 
 default_args = {
     "owner": "airflow",
